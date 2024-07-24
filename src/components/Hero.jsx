@@ -1,90 +1,218 @@
-// import React from 'react'
+"use client";
+import React, { useState } from "react";
 
 import Image from "next/image";
+import Modal from "./Modal";
 
 const Hero = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
   return (
-    <div className="bg-[url('/bg.svg')] relative w-full  h-screen px-[100px]">
+    <div className="bg-[url('/bg.svg')] relative w-full  h-screen px-[30px] lg:px-[80px] xl:px-[100px]">
       <div className="pt-[24px] flex justify-between items-center">
         <Image src="/logo.svg" alt="" width={155} height={53} />
 
-        <button className="px-[27px] py-[14px] bg-gradient-to-r text-[20px] from-[#0477FE] to-[#0023FF] text-white rounded-[10px]">
+        <button
+          className=" xl:px-[27px] px-[17px] sm:py-[15px] sm:px-[30px] lg:py-[10px]  xl:py-[14px] bg-gradient-to-b sm:text-[15px] font-[600] lg:text-[20px] from-[#0477FE] to-[#0023FF] text-white rounded-[10px]"
+          onClick={openModal}
+        >
           Get Started
         </button>
+
+        <Modal isOpen={isModalOpen} onClose={closeModal}>
+          <div className="px-[35px] py-[25px] ">
+            <h2 className="text-[42px] text-center font-poppins text-[#0477FE] font-bold mb-2">
+              Subsription
+            </h2>
+            <p className="font-poppins text-[#161616] text-[20px] text-center font-[400]">
+              Join for £5
+            </p>
+
+            <div className="mt-6">
+              <div className="flex items-center gap-[8px] ">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 11H5C3.89543 11 3 11.8954 3 13V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V13C21 11.8954 20.1046 11 19 11Z"
+                    stroke="#161616"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11"
+                    stroke="#161616"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p className="text-[#EF5F3C] font-[600] font-poppins text-[20px] ">
+                  Secure, 1-Click Checkout with Link
+                </p>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 9L12 15L18 9"
+                    stroke="#161616"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+
+              {/* Input Stuff */}
+              <div className="mt-[30px] gap-[30px] max-w-full flex items-center">
+                <div className="">
+                  <p className="font-poppins font-[400] text-[18px] text-[#161616]">
+                    Card Number
+                  </p>
+                  <input
+                    type="number"
+                    placeholder="1234 1234 1234 1234"
+                    className="px-3 py-2 outline-none  w-[360px] border rounded-[10px] border-[#16161633] h-[50px] mt-[10px] shadow-lg shadow-[#0477FE26]"
+                  />
+                </div>
+
+                <div className="">
+                  <p className="font-poppins font-[400] text-[18px] text-[#161616]">
+                    Expiration
+                  </p>
+                  <input
+                    type="number"
+                    placeholder="MM / YY"
+                    className="px-3 py-2 outline-none w-[160px]  border rounded-[10px] border-[#16161633] h-[50px] mt-[10px] shadow-lg shadow-[#0477FE26]"
+                  />
+                </div>
+
+                <div className="">
+                  <p className="font-poppins font-[400] text-[18px] text-[#161616]">
+                    Card Number
+                  </p>
+                  <input
+                    type="number"
+                    placeholder="CVC"
+                    className="px-3 py-2 outline-none w-[160px]  border rounded-[10px] border-[#16161633] h-[50px] mt-[10px] shadow-lg shadow-[#0477FE26]"
+                  />
+                </div>
+              </div>
+
+              <div className="mt-[30px] gap-[30px] max-w-full">
+                <p className="font-poppins font-[400] text-[18px] text-[#161616]">
+                  Country
+                </p>
+                <input
+                  type="number"
+                  placeholder="India"
+                  className="px-3 py-2 outline-none  w-full border rounded-[10px] border-[#16161633] h-[50px] mt-[10px] shadow-lg shadow-[#0477FE26]"
+                />
+              </div>
+            </div>
+
+            <div className="w-full mt-2">
+              <p className="font-poppins font-[400] text-[16px] text-[#161616]">
+              By providing your card information, you allow ASKUS ANYTIME LIMITED to charge your card for future payments in accordance with their terms.
+              </p>
+
+              <button className="mt-[30px] rounded-[10px] text-white bg-gradient-to-b from-[#0477FE] to-[#0023FF] w-full font-poppins font-[500] text-[25px] text-center py-4">
+                Continue
+              </button>
+            </div>
+
+            {/* <button 
+            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+            onClick={closeModal}
+          >
+            Close Modal
+          </button> */}
+          </div>
+        </Modal>
       </div>
 
       {/* Content */}
-      <div className="flex justify-center items-center w-full  mt-[80px] gap-[40px]">
-        <div className="w-1/2">
-          <h1 className="font-poppins text-[52px] font-[700] ">
+      <div className="flex _sm:flex-col flex-row justify-center items-center w-full mt-0 md:mt-[50px] lg:mt-6 xl:mt-[80px] gap-[20px] lg:gap-[40px]">
+        <div className="w-1/2 ">
+          <h1 className="font-poppins sm:text-[30px] lg:text-[42px] xl:text-[52px] font-[700] ">
             Welcome to <br />
             <span className="text-[#0477FE]">Askus Anytime</span>
           </h1>
 
-          <p className="max-w-[659px] font-poppins text-[20px] text-[#161616] mt-[10px] mb-[50px] font-[400] ">
+          <p className="max-w-[659px] font-poppins  lg:text-[16px] xl:text-[20px] text-[#161616] mt-[10px] mb-[50px] font-[400] ">
             Your reliable platform of online legal assistance in any conflict
             provides expert guidance across diverse legal questions, ensuring
             clarity and informed decisions. Trust us for comprehensive and
             accessible legal help tailored to your needs.
           </p>
 
-          <button className="px-[27px] py-[18px] bg-gradient-to-r text-[20px] from-[#0477FE] to-[#0023FF] text-white rounded-[10px]">
+          <button className="hidden sm:py-[15px] sm:px-[30px] md:flex  z-10 lg:px-[27px] py-[18px] bg-gradient-to-r text-[15px] lg:text-[20px] from-[#0477FE] to-[#0023FF] text-white rounded-[10px]">
             Get Started
           </button>
         </div>
 
-        <div className="bg-white max-w-[600] w-1/2  h-auto rounded-[20px]">
+        <div className="bg-white max-w-[600]  w-1/2  h-auto rounded-[20px]">
           <div className="flex justify-center flex-col px-[20px] pt-[30px]">
-            <h2 className="whitespace-nowrap text-[32px] font-[700] font-poppins">
+            <h2 className="whitespace-nowrap text-[16px] lg:text-[22px] xl:text-[32px] font-[700] font-poppins">
               Setup & Start 3-Day Trial
             </h2>
-            <p className="mt-[10px] text-[16px] font-poppins">
+            <p className="mt-[10px] text-[12px] lg:text-[16px] font-poppins">
               Unlimited Questions, Unlimited Answers just £5 for 3 days!
             </p>
           </div>
 
-          <div className="flex justify-center flex-col px-[20px] py-[30px]">
+          <div className="flex justify-center flex-col px-[20px] py-[10px] lg:py-[30px]">
             <div className="">
-              <p className="text-[18px] font-poppins font-[400] ">
+              <p className=" text-[14px] lg:text-[18px] font-poppins font-[400] ">
                 Phone Number
               </p>
               <input
                 type="number"
-                className="px-3 py-2 outline-none w-full border rounded-[10px] border-[#16161633] h-[50px] mt-[10px] shadow-lg shadow-[#0477FE26]"
+                className="px-3 py-2 outline-none w-full border rounded-[10px] border-[#16161633] h-[50px] lg:mt-[10px] shadow-lg shadow-[#0477FE26]"
               />
             </div>
 
-            <div className="mt-[30px]">
-              <p className="text-[18px] font-poppins font-[400] ">OTP</p>
+            <div className="mt-[15px] lg:mt-[30px]">
+              <p className="text-[14px] lg:text-[18px] font-poppins font-[400] ">OTP</p>
               <input
                 type="number"
-                className="px-3 py-2 outline-none w-full border rounded-[10px] border-[#16161633] h-[50px] mt-[10px] shadow-lg shadow-[#0477FE26]"
+                className="px-3 py-2 outline-none w-full border rounded-[10px] border-[#16161633] h-[50px] lg:mt-[10px] shadow-lg shadow-[#0477FE26]"
               />
 
-              <div className="flex justify-end items-center text-[#0477FE] font-poppins font-[400] text-[16px]    ">
+              <div className="flex justify-end items-center text-[#0477FE] font-poppins font-[400] text-[12px] lg:text-[16px]    ">
                 Resend code
               </div>
             </div>
 
-<div className="flex items-center mt-4 gap-[8px]">
-  <input type="checkbox" className="" />
-  <p className="">I agree to Askusat’s {' '}
-    <a href="" className="text-[#0477FE]">Terms of Service</a></p>
-</div>
+            <div className="flex items-center mt-4 gap-[8px]">
+              <input type="checkbox" className="" />
+              <p className="text-[12px] lg:text-[16px] ">
+                I agree to Askusat’s{" "}
+                <a href="" className="text-[#0477FE]">
+                  Terms of Service
+                </a>
+              </p>
+            </div>
 
-{/* <button className="w-fit mt-[51px]  "> 
- <p className="bg-gradient-to-r text-[20px] text-white from-[#0477FE] to-[#0023FF] px-[82px] py-[18]">Chat Now</p>
-</button> */}
-
-<div className="pt-[31px]">
-
-<button className="px-[82px] py-[18px] bg-gradient-to-r text-[20px] from-[#0477FE] to-[#0023FF] text-white rounded-[10px]">
-          Chat Now 
-        </button>
-  
-</div>
-
-
+            
+            <div className="pt-[31px]">
+              <button className="lg:px-[60px] lg:py-[15px] md:px-[40px] md:py-[10px] xl:px-[82px] xl:py-[18px] bg-gradient-to-r text-[15px] lg:text-[20px] from-[#0477FE] to-[#0023FF] text-white rounded-[10px]">
+                Chat Now
+              </button>
+            </div>
           </div>
         </div>
       </div>

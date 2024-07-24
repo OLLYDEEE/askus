@@ -2,7 +2,7 @@ import React from "react";
 
 const Highlight = () => {
   return (
-    <div className="px-[100px]">
+    <div className="px-[30px] lg:px-[80px] xl:px-[100px]">
       <div className=" mt-[80px] flex justify-center">
         <h2 className="text-[32px] font-poppins font-[700] text-center">
           Highlights and Performance Impacts <br /> of{" "}
@@ -10,7 +10,7 @@ const Highlight = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-3 gap-[30px] pb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  place-items-center justify-items-center  gap-[30px] pb-8">
         <div className="flex justify-center items-center flex-col text-center">
           <div className="w-[133px] h-[133px] mt-[22px] rounded-full bg-gradient-radial from-[#0477FE] to-[#0023FF] flex items-center justify-center">
             <svg
@@ -38,10 +38,10 @@ const Highlight = () => {
               />
             </svg>
           </div>
-          <h1 className="text-[#161616] mt-[20px] text-[24px] font-[600] max-w-[210px] font-poppins">
+          <h1 className="text-[#161616] mt-[20px] lg:text-[20px] xl:text-[24px] font-[600] max-w-[210px] font-poppins">
             95% Client Satisfaction Rate
           </h1>
-          <p className="max-w-[400px] font-poppins mt-[20px] font-[400]">
+          <p className="max-w-[400px] font-poppins  mt-[20px] font-[400]">
             Our commitment to client satisfaction is reflected in our
             exceptional 95% satisfaction rate, showcasing our dedication to
             delivering quality service online and achieving positive outcomes
@@ -88,7 +88,7 @@ const Highlight = () => {
               />
             </svg>
           </div>
-          <h1 className="text-[#161616] mt-[20px] text-[24px] font-[600] max-w-[210px] font-poppins">
+          <h1 className="text-[#161616] lg:text-[20px] mt-[20px] xl:text-[24px] font-[600] max-w-[210px] font-poppins">
             10+ Years of Legal Expertise
           </h1>
           <p className="max-w-[400px] font-poppins mt-[10px] font-[400]">
@@ -121,7 +121,7 @@ const Highlight = () => {
               />
             </svg>
           </div>
-          <h1 className="text-[#161616] mt-[20px] text-[24px] font-[600] max-w-[210px] font-poppins">
+          <h1 className="text-[#161616] mt-[20px] lg:text-[20px] xl:text-[24px] font-[600] max-w-[210px] font-poppins">
             Available 24/7 Online
           </h1>
           <p className="max-w-[400px] font-poppins mt-[10px] font-[400]">
