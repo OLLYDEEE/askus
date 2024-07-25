@@ -11,12 +11,12 @@ const Hero = () => {
   const closeModal = () => setModalOpen(false);
 
   return (
-    <div className="bg-[url('/bg.svg')] relative w-full h-auto md:h-screen px-[20px] md:px-[30px] lg:px-[80px] xl:px-[100px]">
+    <div className="bg-[url('/bg.svg')] relative w-full h-auto md:h-screen px-[20px] md:px-[30px] lg:px-[80px] xl:px-[100px] pb-[33px]">
       <div className="pt-[24px] flex justify-between items-center">
         <Image src="/logo.svg" alt="" width={155} height={53} className="w-[93px] h-[31] md:w-[155px] md:h-[53px]"/>
        
         <button
-          className=" xl:px-[27px] px-[12px] py-[5px] md:px-[30px] md:py-[12px] lg:py-[10px]  xl:py-[14px] bg-gradient-to-b text-[15px] font-[600] lg:text-[20px] from-[#0477FE] to-[#0023FF] text-white rounded-[10px] z-10"
+          className=" xl:px-[27px] px-[12px] py-[5px] md:px-[30px] md:py-[12px] lg:py-[10px]  xl:py-[14px] bg-gradient-to-b text-[12px] md:font-[600] lg:text-[20px] from-[#0477FE] to-[#0023FF] text-white rounded-[5px] md:rounded-[10px] z-10 leading-[25px]"
           onClick={openModal}
         >
           Get Started
@@ -120,7 +120,7 @@ const Hero = () => {
                   Country
                 </p>
                 <input
-                  type="number"
+                  type="text"
                   placeholder="India"
                   className="px-3 py-2 outline-none  w-full border rounded-[10px] border-[#16161633] h-[50px] mt-[10px] shadow-lg shadow-[#0477FE26]"
                 />
@@ -148,7 +148,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col md:flex-row justify-center items-center w-full mt-[20px] md:mt-[50px] lg:mt-6 xl:mt-[80px] gap-[20px] lg:gap-[40px]">
+      <div className="flex flex-col md:flex-row justify-center items-center w-full mt-[52px] md:mt-[50px] lg:mt-6 xl:mt-[80px] gap-[20px] lg:gap-[40px]">
         <div className="w-full  text-center md:w-1/2 ">
           <h1 className="font-poppins  md:text-start text-[24px] md:text-[30px] lg:text-[42px] xl:text-[52px] font-[700] ">
             Welcome to <br />
@@ -172,7 +172,7 @@ const Hero = () => {
             <h2 className="whitespace-nowrap text-[18px] lg:text-[22px] xl:text-[32px] font-[700] font-poppins">
               Setup & Start 3-Day Trial
             </h2>
-            <p className="mt-[7px] md:mt-[10px] text-[12px] lg:text-[16px] font-poppins">
+            <p className="mt-[7px] md:mt-[10px] text-[14px] lg:text-[16px] font-poppins">
               Unlimited Questions, Unlimited Answers just £5 for 3 days!
             </p>
           </div>

@@ -49,12 +49,12 @@ function CustomSlider() {
   return (
     <div className="slider-container  mt-8 w-[100vw] mb-8">
       <Slider {...settings}>
-        <div className="slide bg-white rounded-lg h-[250px] md:h-[400px] p-2 md:p-5 lg:p-4 xl:p-6">
+        <div className="slide bg-white rounded-lg h-[270px] md:h-[400px] p-2 md:p-5 lg:p-4 xl:p-6">
         <div className=" flex justify-between items-start">
             <div className="flex  items-center gap-2 md:gap-[16px]">
               <Image src="/Emily.svg" alt="" width={80} height={80} className="w-[44px] h-[44px] md:w-[80px] md:h-[80px] object-center object-contain"/>
               <div className="flex flex-col">
-                <h1 className="text-[14px] whitespace-nowrap md:text-[18px] font-poppins  font-[700] text-[#0477FE] ">
+                <h1 className="text-[14px]  md:text-[18px] font-poppins  font-[700] text-[#0477FE] ">
                 Emily T., Birmingham
                 </h1>
 
@@ -134,7 +134,7 @@ function CustomSlider() {
               </div>
             </div>
 
-            <div className="whitespace-nowrap mt-6 md:mt-2 items-center flex text-[10px] md:text-[14px]">2 March, 2024 </div>
+            <div className=" mt-2 md:mt-2 items-center flex text-[10px] md:text-[14px]">2 March, 2024 </div>
           </div>
 
           <p className="mt-4 text-[12px] md:text-[16px] xl:text-[18px] 2xl:text-[20px] font-[400] font-poppins">
@@ -142,12 +142,12 @@ function CustomSlider() {
           </p>
         </div>
 
-        <div className="slide bg-white rounded-lg h-[250px] md:h-[400px] p-2 md:p-5 lg:p-4 xl:p-6">
+        <div className="slide bg-white rounded-lg h-[270px] md:h-[400px] p-2 md:p-5 lg:p-4 xl:p-6">
         <div className=" flex justify-between items-start">
             <div className="flex items-center gap-2 md:gap-[16px]">
               <Image src="/Jake.svg" alt="" width={80} height={80} className="w-[44px] h-[44px] md:w-[80px] md:h-[80px] object-center object-contain"/>
               <div className="flex flex-col">
-                <h1 className="text-[14px] whitespace-nowrap md:text-[18px] font-poppins  font-[700] text-[#0477FE] ">
+                <h1 className="text-[14px]  md:text-[18px] font-poppins  font-[700] text-[#0477FE] ">
                 Ahmed K., Manchester
                 </h1>
 
@@ -227,7 +227,7 @@ function CustomSlider() {
               </div>
             </div>
 
-            <div className="whitespace-nowrap mt-6 md:mt-2 items-center flex text-[10px] md:text-[14px]">2 March, 2024 </div>
+            <div className=" mt-2 md:mt-2 items-center flex text-[10px] md:text-[14px]">2 March, 2024 </div>
           </div>
 
           <p className="mt-4 text-[12px] md:text-[16px] xl:text-[18px] 2xl:text-[20px] font-[400] font-poppins">
@@ -236,12 +236,12 @@ function CustomSlider() {
         </div>
 
 
-        <div className="slide bg-white rounded-lg h-[250px] md:h-[400px] p-2 md:p-5 lg:p-4 xl:p-6">
+        <div className="slide bg-white rounded-lg h-[270px] md:h-[400px] p-2 md:p-5 lg:p-4 xl:p-6">
         <div className=" flex justify-between items-start">
             <div className="flex items-center gap-0 md:gap-[16px]">
               <Image src="/Image.svg" alt="" width={80} height={80} className="w-[44px] h-[44px] md:w-[80px] md:h-[80px] object-center object-contain"/>
               <div className="flex flex-col">
-                <h1 className="text-[14px] md:text-[18px] font-poppins  font-[700] text-[#0477FE] ">
+                <h1 className="text-[13px] md:text-[18px] font-poppins  font-[700] text-[#0477FE] ">
                   John S., Jordan
                 </h1>
 
@@ -321,7 +321,7 @@ function CustomSlider() {
               </div>
             </div>
 
-            <div className="whitespace-nowrap mt-4 md:mt-2 items-center flex text-[10px] md:text-[14px]">2 March, 2024 </div>
+            <div className=" mt-2 md:mt-2 items-center flex  text-[10px] md:text-[14px]">2 March, 2024 </div>
           </div>
 
           <p className="mt-4 text-[12px] md:text-[16px] xl:text-[18px] 2xl:text-[20px] font-[400] font-poppins">
@@ -329,7 +329,7 @@ function CustomSlider() {
           </p>
         </div>
 
-        <div className="slide bg-white rounded-lg h-[250px] md:h-[400px] p-2 md:p-5 lg:p-4 xl:p-6">
+        <div className="slide bg-white rounded-lg h-[270px] md:h-[400px] p-2 md:p-5 lg:p-4 xl:p-6">
         <div className=" flex justify-between items-start">
             <div className="flex items-center gap-0 md:gap-[16px]">
               <Image src="/Image.svg" alt="" width={80} height={80} className="w-[44px] h-[44px] md:w-[80px] md:h-[80px] object-center object-contain"/>
@@ -414,7 +414,7 @@ function CustomSlider() {
               </div>
             </div>
 
-            <div className="whitespace-nowrap mt-4 md:mt-2 items-center flex text-[10px] md:text-[14px]">2 March, 2024 </div>
+            <div className=" mt-2 md:mt-2 items-center flex text-[10px] md:text-[14px]">2 March, 2024 </div>
           </div>
 
           <p className="mt-4 text-[12px] md:text-[16px] xl:text-[18px] 2xl:text-[20px] font-[400] font-poppins">

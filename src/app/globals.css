@@ -1,32 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.slick-dots {
+  margin-bottom: 40px; /* Adjust this value as needed */
+}
+.slick-slide {
+  padding: 0 5px; /* Adjust the padding value to control the gap */
+}
 
-  .slick-dots {
-    margin-bottom: 40px; /* Adjust this value as needed */
-  }
-  .slick-slide {
-    padding: 0 5px; /* Adjust the padding value to control the gap */
-  }
+/* Style each dot */
+.slick-dots li button::before {
+  font-size: 11px !important; /* Change dot size */
+  color: #d8d8d8 !important;
+  /* border: 1px solid white !important; */
+  /* border-radius: 100% !important; */
+  width: 11px !important;
+  height: 11px !important;
 
+  /* Default dot color */
+}
 
- 
-  /* Style each dot */
-  .slick-dots li button:before {
-    font-size: 20px; /* Change dot size */
-    color: white !important;
-  
-    /* Default dot color */
-    
-  }
-  
-  /* Change the active dot color */
-  .slick-dots li.slick-active button:before {
-    color: #FFFFFF !important; /* Active dot color */
-    background: none;
-    
-  }
-  
+/* Change the active dot color */
+.slick-dots li.slick-active button::before {
+  color: #ffffff !important; /* Active dot color */
+  background: none;
+}
