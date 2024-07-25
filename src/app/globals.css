@@ -4,31 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-slider {
-    position: relative;
-    /* height: 100%; */
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    /* padding: 0 0px; */
-    
-  }
 
+  .slick-dots {
+    margin-bottom: 40px; /* Adjust this value as needed */
+  }
   .slick-slide {
-      
-    /* text-align:center; */
-    margin-right:5px;
-    margin-left:5px;
-    
-}
-
-.slick-dots {
-    padding-top: 50px;
-     /* Adjust position */
-    color: white;
-    /* background: blue; */
-    /* z-index: 100; */
+    padding: 0 5px; /* Adjust the padding value to control the gap */
   }
+
+
  
   /* Style each dot */
   .slick-dots li button:before {
@@ -42,6 +26,7 @@
   /* Change the active dot color */
   .slick-dots li.slick-active button:before {
     color: #FFFFFF !important; /* Active dot color */
-    
+    background: none;
     
   }
+  

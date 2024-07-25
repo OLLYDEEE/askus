@@ -3,16 +3,16 @@ import React from "react";
 const Highlight = () => {
   return (
     <div className="px-[30px] lg:px-[80px] xl:px-[100px]">
-      <div className=" mt-[80px] flex justify-center">
-        <h2 className="text-[32px] font-poppins font-[700] text-center">
-          Highlights and Performance Impacts <br /> of{" "}
+      <div className=" mt-[30px] md:mt-[80px] flex justify-center">
+        <h2 className="text-[17px]  md:text-[32px] font-poppins font-[700] text-center">
+          Highlights and Performance <br className="md:hidden "/> Impacts <br className="hidden md:flex"/> of{" "}
           <span className="text-[#0477FE]">Askus Anytime</span>
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  place-items-center justify-items-center  gap-[30px] pb-8">
-        <div className="flex justify-center items-center flex-col text-center">
-          <div className="w-[133px] h-[133px] mt-[22px] rounded-full bg-gradient-radial from-[#0477FE] to-[#0023FF] flex items-center justify-center">
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3  place-items-center w-full justify-items-center  md:gap-[30px] pb-8 md:pb-0 lg:pb-8">
+        <div className="flex _justify-center items-center flex-col text-center">
+          <div className="w-[133px] h-[133px] mt-[20px] md:mt-[22px] rounded-full bg-gradient-radial from-[#0477FE] to-[#0023FF] flex items-center justify-center">
             <svg
               width="82"
               height="82"
@@ -37,11 +37,13 @@ const Highlight = () => {
                 fill="white"
               />
             </svg>
+
+
           </div>
-          <h1 className="text-[#161616] mt-[20px] lg:text-[20px] xl:text-[24px] font-[600] max-w-[210px] font-poppins">
+          <h1 className="text-[#161616] mt-[20px] text-[16px] lg:text-[20px] xl:text-[24px] font-[600] max-w-[210px] font-poppins whitespace-nowrap md:whitespace-normal">
             95% Client Satisfaction Rate
           </h1>
-          <p className="max-w-[400px] font-poppins  mt-[20px] font-[400]">
+          <p className="max-w-[400px] text-[14px] md:text-[16px] text-center font-poppins  mt-[20px] font-[400]">
             Our commitment to client satisfaction is reflected in our
             exceptional 95% satisfaction rate, showcasing our dedication to
             delivering quality service online and achieving positive outcomes
@@ -49,8 +51,8 @@ const Highlight = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center flex-col text-center">
-          <div className="w-[133px] h-[133px] mt-[22px] rounded-full bg-gradient-radial from-[#0477FE] to-[#0023FF] flex items-center justify-center">
+        <div className="flex _justify-center items-center flex-col text-center">
+          <div className="w-[133px] h-[133px]  mt-[20px] md:mt-[22px] rounded-full bg-gradient-radial from-[#0477FE] to-[#0023FF] flex items-center justify-center">
             <svg
               width="82"
               height="82"
@@ -88,17 +90,17 @@ const Highlight = () => {
               />
             </svg>
           </div>
-          <h1 className="text-[#161616] lg:text-[20px] mt-[20px] xl:text-[24px] font-[600] max-w-[210px] font-poppins">
+          <h1 className="text-[#161616] text-[16px] lg:text-[20px] mt-[20px] xl:text-[24px] font-[600] max-w-[210px] font-poppins whitespace-nowrap md:whitespace-normal">
             10+ Years of Legal Expertise
           </h1>
-          <p className="max-w-[400px] font-poppins mt-[10px] font-[400]">
+          <p className="max-w-[400px] text-[14px] text-center md:text-[16px] font-poppins mt-[10px] font-[400]">
             With more than a decade of experience in the legal industry, our
             lawyers bring extensive knowledge and seasoned expertise to every
             query we answer.
           </p>
         </div>
 
-        <div className="flex justify-center items-center flex-col text-center">
+        <div className="flex lg:flex md:hidden _justify-center items-center flex-col w-full text-center">
           <div className="w-[133px] h-[133px] mt-[22px] rounded-full bg-gradient-radial from-[#0477FE] to-[#0023FF] flex items-center justify-center">
             <svg
               width="80"
@@ -121,16 +123,50 @@ const Highlight = () => {
               />
             </svg>
           </div>
-          <h1 className="text-[#161616] mt-[20px] lg:text-[20px] xl:text-[24px] font-[600] max-w-[210px] font-poppins">
+          <h1 className="text-[#161616] mt-[20px] lg:text-[20px] xl:text-[24px] font-[600] max-w-[210px] font-poppins whitespace-nowrap md:whitespace-normal">
             Available 24/7 Online
           </h1>
-          <p className="max-w-[400px] font-poppins mt-[10px] font-[400]">
+          <p className="max-w-[400px] text-center text-[14px] md:text-[16px] font-poppins mt-[10px] font-[400]">
             Access our expert legal guidance conveniently online, anytime you
             need it. We ensure accessibility and responsiveness, allowing you to
             seek legal assistance from anywhere.
           </p>
         </div>
       </div>
+
+      <div className="md:flex hidden pb-8 lg:hidden  _justify-center items-center flex-col w-full text-center">
+          <div className="w-[133px] h-[133px] mt-[22px] rounded-full bg-gradient-radial from-[#0477FE] to-[#0023FF] flex items-center justify-center">
+            <svg
+              width="80"
+              height="80"
+              viewBox="0 0 80 80"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M43.9196 40.88H37.8396L43.5996 33.52C44.5596 32.24 44.9596 30.56 44.6396 28.96C44.3196 27.28 43.2796 25.76 41.8396 24.96C40.4796 24.16 38.8796 24 37.3596 24.4C35.8396 24.8 34.5596 25.76 33.7596 27.12C33.4396 27.68 33.5996 28.4 34.2396 28.72C34.7996 29.04 35.5196 28.88 35.8396 28.24C36.3196 27.44 37.0396 26.88 37.9196 26.64C38.7996 26.4 39.7596 26.48 40.5596 26.96C41.3596 27.44 41.9996 28.32 42.1596 29.36C42.3196 30.32 42.1596 31.28 41.5996 32L34.3996 41.36C34.0796 41.76 34.0796 42.24 34.2396 42.64C34.4796 43.04 34.8796 43.28 35.2796 43.28H43.8396C44.4796 43.28 45.0396 42.72 45.0396 42.08C45.0396 41.44 44.5596 40.88 43.9196 40.88Z"
+                fill="white"
+              />
+              <path
+                d="M57.6798 36.24H56.8798V25.44C56.8798 24.88 56.5598 24.48 55.9998 24.32C55.5198 24.16 54.9598 24.4 54.6398 24.8L46.6398 36.8C46.3998 37.2 46.3998 37.68 46.5598 38C46.7998 38.4 47.1998 38.64 47.5998 38.64H54.3998V42C54.3998 42.64 54.9598 43.2 55.5998 43.2C56.2398 43.2 56.7998 42.64 56.7998 42V38.64H57.5998C58.2398 38.64 58.7998 38.08 58.7998 37.44C58.7998 36.8 58.3197 36.24 57.6798 36.24ZM54.4798 36.24H49.9198L54.4798 29.36V36.24Z"
+                fill="white"
+              />
+              <path
+                d="M75.9999 33.76C75.9999 17.36 62.6399 4 46.2399 4C36.8799 4 28.1599 8.4 22.5599 15.76L21.2799 14.48C19.1999 12.4 15.8399 12.4 13.7599 14.48L7.75988 20.48C3.51988 24.8 2.87988 31.04 5.75988 38.8C8.23988 45.44 13.4399 52.88 20.3199 59.76C29.4399 68.88 40.7999 76 49.9199 76C53.5999 76 56.8799 74.88 59.5199 72.24L65.5199 66.24C67.5999 64.16 67.5999 60.8 65.5199 58.72L64.2399 57.44C71.5999 51.76 75.9999 43.04 75.9999 33.76ZM63.8399 64.48L57.8399 70.48C49.8399 78.48 33.6799 69.6 22.0799 57.92C15.3599 51.36 10.3999 44.24 7.99988 37.92C6.23988 33.2 5.03988 26.64 9.43988 22.24L15.4399 16.24C15.9999 15.68 16.7199 15.36 17.5199 15.36C18.2399 15.36 19.0399 15.68 19.5999 16.24L26.7999 23.44C27.3599 24 27.6799 24.72 27.6799 25.52C27.6799 26.32 27.3599 27.04 26.7999 27.6L22.6399 31.76C21.3599 33.04 20.3199 35.52 22.4799 40.16C23.9199 43.2 26.4799 46.56 29.9999 50.08C33.4399 53.52 36.8799 56.16 39.9199 57.6C44.4799 59.76 47.0399 58.72 48.3199 57.44L52.4799 53.28C53.5999 52.16 55.4399 52.16 56.5599 53.28L63.7599 60.48C64.9599 61.52 64.9599 63.36 63.8399 64.48ZM62.4799 55.68L58.2399 51.44C56.1599 49.36 52.7999 49.36 50.7199 51.44L46.5599 55.6C45.1999 56.96 42.7999 56.16 40.9599 55.28C38.2399 54 34.9599 51.44 31.6799 48.24C28.4799 45.04 25.9199 41.76 24.6399 38.96C23.7599 37.12 22.9599 34.64 24.3199 33.36L28.4799 29.2C29.5199 28.24 29.9999 26.88 29.9999 25.44C29.9999 24 29.4399 22.72 28.4799 21.68L24.2399 17.44C29.1199 10.8 36.7999 6.72 45.0399 6.4V9.84C45.0399 10.48 45.5999 11.04 46.2399 11.04C46.8799 11.04 47.4399 10.48 47.4399 9.84V6.4C61.5999 7.04 72.9599 18.4 73.5999 32.56H69.1999C68.5599 32.56 67.9999 33.12 67.9999 33.76C67.9999 34.4 68.5599 34.96 69.1999 34.96H73.5999C73.1999 43.12 69.1199 50.8 62.4799 55.68Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <h1 className="text-[#161616] mt-[20px] lg:text-[20px] xl:text-[24px] font-[600] max-w-[210px] font-poppins whitespace-nowrap md:whitespace-normal">
+            Available 24/7 Online
+          </h1>
+          <p className="max-w-[400px] text-center text-[14px] md:text-[16px] font-poppins mt-[10px] font-[400]">
+            Access our expert legal guidance conveniently online, anytime you
+            need it. We ensure accessibility and responsiveness, allowing you to
+            seek legal assistance from anywhere.
+          </p>
+        </div>
+
     </div>
   );
 };
